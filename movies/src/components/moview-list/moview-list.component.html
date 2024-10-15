@@ -1,0 +1,31 @@
+<div>
+  <h3>Movie List</h3>
+  <button (click)="templateType = 'list'">List View</button>
+  <button (click)="templateType = 'card'">Card View</button>
+
+  <ng-container
+    *ngTemplateOutlet=" templateType === 'list' ? listTmpl : cardTmpl; context: {movies: movies}"></ng-container>
+
+
+  <ng-template #listTmpl let-moviesTmpl="movies">
+    <ul>
+      <li *ngFor="let movie of moviesTmpl">{{ movie }}</li>
+    </ul>
+    <ng-container *ngTemplateOutlet="btnTmpl"></ng-container>
+
+  </ng-template>
+
+  <ng-template #cardTmpl let-moviesTmpl="movies">
+    <div class="card-container">
+      <div *ngFor="let movie of moviesTmpl" class="card">
+        {{ movie }}
+      </div>
+    </div>
+    <ng-container *ngTemplateOutlet="btnTmpl"></ng-container>
+  </ng-template>
+
+
+  <ng-template #btnTmpl>
+    <button>Add</button>
+  </ng-template>
+</div>

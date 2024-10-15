@@ -1,0 +1,30 @@
+<app-moview-list></app-moview-list>
+<app-movie-detail>
+  <p #movieDescription appPopover="some texg">Lorem ipsum dolor sit amet.</p>
+  <p #movieDescription>Lorem ipsum dolor sit amet.</p>
+  <p #movieDescription>Lorem ipsum dolor sit amet.</p>
+  <div>
+    <div>
+      <p #movieDescription>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+</app-movie-detail>
+
+
+<app-movie-outlet></app-movie-outlet>
+
+<ng-container #footerTmpl></ng-container>
+
+<app-card>
+  <div slot="footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, iusto!</p>
+  </div>
+  <div slot="header">
+    <h2> Movie title</h2>
+  </div>
+  <div slot="content">
+    <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+
+
+</app-card>
