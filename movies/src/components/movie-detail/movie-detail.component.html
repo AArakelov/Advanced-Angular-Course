@@ -1,5 +1,27 @@
+<!--<div>-->
+<!--  <h1>ID: {{ msID }}</h1>-->
+<!--  <h3>Movie Details-->
+<!--  </h3>-->
+<!--  <ng-content></ng-content>-->
+<!--</div>-->
 <div>
-  <h3>Movie Details
-  </h3>
-  <ng-content></ng-content>
+  <h2>Movies form MovieService</h2>
+
+  <ul>
+    <li *ngFor="let m of movies">{{ m }}</li>
+  </ul>
+
+
+  <h2>Movies form MockMovieService</h2>
+  <ul>
+    <li *ngFor="let m of mockMovies">{{ m }}</li>
+  </ul>
 </div>
+
+
+<div>
+  <button (click)="showSuccess()">Show Success</button>
+  <button (click)="showError()">Show Error</button>
+  <button (click)="showWarning()">Show Warning</button>
+</div>
+<lib-notification-lib></lib-notification-lib>

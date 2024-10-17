@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+///* Убираем отступы и делаем контейнер на весь экран */
+///* Импортируем стили Xterm.js */
+//
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+//
+///* Глобальные стили для контейнера терминала */
+//.xterm {
+//  font-family: 'Courier New', monospace; /* Шрифт для терминала */
+//  font-size: 14px; /* Размер шрифта */
+//  line-height: 1.4; /* Высота строки */
+//  background-color: #1e1e1e; /* Фон терминала */
+//  color: #ffffff; /* Цвет текста */
+//  padding: 10px; /* Отступы внутри терминала */
+//  border-radius: 8px; /* Скругленные углы */
+//}
+//
+///* Цвета для курсора и текста */
+//.xterm-cursor {
+//  color: #ffffff; /* Цвет курсора */
+//  background-color: #ffcc00; /* Цвет фона курсора */
+//}
+//
+///* Дополнительные настройки для терминала */
+//.xterm-viewport {
+//  background-color: #1e1e1e; /* Фон для области просмотра */
+//}
+//
+//.xterm-rows {
+//  padding: 2px 10px; /* Отступы внутри строки */
+//}
+//
+///* Подсветка выделенного текста */
+//.xterm-selection {
+//  background-color: rgba(255, 255, 255, 0.3); /* Цвет выделенного текста */
+//}
+//
+///* Терминал будет растягиваться на всю область экрана */
+//.xterm-fullscreen {
+//  width: 100vw; /* 100% ширины экрана */
+//  height: 100vh; /* 100% высоты экрана */
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  background-color: #1e1e1e; /* Цвет фона терминала */
+//}
+//
+///* Фиксированный размер терминала */
+//.xterm-fixed {
+//  width: 800px; /* Фиксированная ширина */
+//  height: 400px; /* Фиксированная высота */
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  background-color: #1e1e1e; /* Фон терминала */
+//}
+//
+//.xterm {
+//  width: 100%; /* Терминал займет всю ширину контейнера */
+//  height: 100%; /* Терминал займет всю высоту контейнера */
+//  padding: 0;
+//  box-sizing: border-box;
+//}
